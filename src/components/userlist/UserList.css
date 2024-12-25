@@ -1,0 +1,39 @@
+/* Liste des utilisateurs en mode card */
+.user-list {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux cartes de s'afficher sur plusieurs lignes si nécessaire */
+  gap: 20px; /* Espace entre les cartes */
+  justify-content: center; /* Centre les cartes */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Carte individuelle */
+.user-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px; /* Largeur fixe pour chaque carte */
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Titre ou contenu principal */
+.user-item h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Effet au survol */
+.user-item:hover {
+  transform: scale(1.05); /* Légère mise en avant au survol */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
